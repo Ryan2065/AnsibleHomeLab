@@ -1,0 +1,14 @@
+all:
+  hosts:
+  children:
+    hyperv:
+      DellServer
+    server:
+      Lab-CM
+      Lab-DC
+    win11:
+      Lab-Win11
+    dc:
+      Lab-DC
+    sccm:
+      Lab-CM
