@@ -2,16 +2,22 @@ all:
   hosts:
   children:
     hyperv:
-      DellServer
+      hosts:
+        DellServer:
     server:
-      Lab-CM
-      Lab-DC
+      hosts:
+        Lab-CM.HOME.LAB:
+        Lab-DC.HOME.LAB:
     win11:
-      Lab-Win11
+      hosts:
+        Lab-Win11.HOME.LAB:
     dc:
-      Lab-DC
+      hosts:
+        Lab-DC.HOME.LAB:
     sccm:
-      Lab-CM
+      hosts:
+        Lab-CM.HOME.LAB:
     vm:
-      server:
-      win11:
+      children:
+        server:
+        win11:
