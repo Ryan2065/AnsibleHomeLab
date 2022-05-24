@@ -12,3 +12,6 @@ all:
       Lab-DC
     sccm:
       Lab-CM
+    vm:
+      server:
+      win11:
